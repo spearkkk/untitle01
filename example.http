@@ -1,0 +1,62 @@
+### Implement 1
+GET http://localhost:8080/v1/products/lowest-by-category
+
+### Implement 2
+GET http://localhost:8080/v1/products/lowest-by-brand
+
+### Implement 3
+GET http://localhost:8080/v1/products/lowest-and-highest?category=TOP
+
+### Implement 4 - create
+POST localhost:8080/v1/products
+Content-Type: application/json
+
+{
+  "brand": "W",
+  "items": [
+    {
+      "category": "TOP",
+      "price": 10000
+    },
+    {
+      "category": "OUTER",
+      "price": 90000
+    },
+    {
+      "category": "BOTTOM",
+      "price": 40000
+    },
+    {
+      "category": "SNEAKERS",
+      "price": 50000
+    },
+    {
+      "category": "BAG",
+      "price": 80000
+    },
+    {
+      "category": "HAT",
+      "price": 30000
+    },
+    {
+      "category": "SOCKS",
+      "price": 5000
+    },
+    {
+      "category": "ACCESSORY",
+      "price": 200000
+    }
+  ]
+}
+
+### Implement 4 - update
+PUT localhost:8080/v1/products/O
+Content-Type: application/json
+
+{
+"category": "TOP",
+"price": 10000000
+}
+
+### Implement 4 - delete
+DELETE localhost:8080/v1/products/W
